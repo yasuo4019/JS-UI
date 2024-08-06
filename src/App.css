@@ -1,0 +1,188 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.App-logo {
+    height: 24px;
+    /*pointer-events: none; */
+}
+
+.App-logo {
+    height: 24px;
+    /*pointer-events: none; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: App-logo-float infinite 3s ease-in-out;
+    }
+}
+
+.App-header {
+    background-color: rgb(246, 246, 246);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin); */
+}
+
+.App-content {
+    /* min-height: 72vh; */
+    font-size: 0.92rem;
+    text-align: justify;
+    flex: 1 0 auto;
+}
+
+.App-footer {
+    margin-top: 10px;
+    background-color: rgb(246, 246, 246);
+    flex-shrink: 0;
+}
+
+.App-footer-content {
+    text-align: left;
+    font-size: 0.86rem;
+    padding-top: 10px;
+}
+
+.Hr-footer {
+    margin-bottom: 4px;
+}
+
+.copyright {
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.App-footer-content p {
+    margin-top: 0;
+    margin-bottom: 0.2rem;
+}
+
+.App-link {
+    color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.spinner-container {
+    min-height: 60px;
+}
+
+.home-page {
+    margin-top: 25px;
+}
+
+.flex-div {
+    display: flex;
+    margin-top: 2rem;
+    column-gap: 16px;
+}
+
+.subtitle {
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* 自定义 */
+.custom-font-size {
+    font-size: 18px; 
+}
+
+.profile-card {
+    border: 1px solid #dee2e6; /* 添加边框 */
+    padding: 15px; /* 添加内边距 */
+    margin-bottom: 20px; /* 添加底部外边距 */
+    border-radius: 5px; /* 轻微的圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 添加轻微的阴影 */
+    background-color: #ffffff; /* 背景颜色设置为白色 */
+}
+
+
+/* Table Headers */
+.table th {
+    background-color: #f2f2f2; /* Light grey background */
+    border-bottom: 2px solid #dee2e6; /* Darker bottom border */
+    color: #040404; /* Dark text for contrast */
+    font-weight: bold; /* Make header text bold */
+}
+
+/* Table Cells */
+.table td {
+    border-top: 1px solid #dee2e6; /* Subtle borders for cells */
+    padding: 0.75rem; /* Comfortable padding around cell content */
+}
+
+/* Alternating Row Colors */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #fafafa; /* Slightly different color for odd rows */
+}
+
+/* Hover Effect */
+.table-hover tbody tr:hover {
+    background-color: #eaeaea; /* Highlight color for hovered rows */
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto; /* Ensures table is scrollable on small devices */
+}
+
+/* Empty State Styling */
+.table tbody tr.empty-state td {
+    text-align: center; /* Center align the text */
+    color: #999; /* Lighter text color to indicate no data */
+    padding: 2rem; /* Bigger padding to increase area */
+    font-style: italic; /* Italicize text to differentiate from regular data */
+}
+
+/* Table Cells with Borders */
+.table thead th,
+.table tbody td {
+    border-right: 1px solid #dee2e6; /* Add right border to all cells */
+    border-bottom: 1px solid #dee2e6; /* Add bottom border to all cells */
+}
+
+/* Last cell of every row does not need a right border */
+.table thead th:last-child,
+.table tbody td:last-child {
+    border-right: none;
+}
+
+/* No-data message cell should not have borders */
+.no-data {
+    border: none;
+}
+
+
